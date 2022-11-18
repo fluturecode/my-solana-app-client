@@ -6,9 +6,9 @@ import styles from '../styles/Home.module.css'
 import AddressForm from '../components/AddressForm'
 import * as web3 from '@solana/web3.js'
 
-const secret = JSON.parse(process.env.PRIVATE_KEY ?? "") as number[]
-const secretKey = Uint8Array.from(secret)
-const keypairFromSecretKey = web3.Keypair.fromSecretKey(secretKey)
+// const secret = JSON.parse(process.env.PRIVATE_KEY ?? "") as number[]
+// const secretKey = Uint8Array.from(secret)
+// const keypairFromSecretKey = web3.Keypair.fromSecretKey(secretKey)
 
 const Home: NextPage = () => {
   const [balance, setBalance] = useState(0)
